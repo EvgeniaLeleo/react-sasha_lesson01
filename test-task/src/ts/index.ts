@@ -9,5 +9,3 @@ document.addEventListener('DOMContentLoaded', () => {
     searchImages(event, searchInput)
   );
 });
-
-abstract;

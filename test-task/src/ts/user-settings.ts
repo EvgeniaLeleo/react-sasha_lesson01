@@ -1,4 +1,4 @@
-const accessKey = 'uYroEa_GDkVEWPMRUGRCNotKhvcX7Qm6aj7rqDxlaAM'; // введите свой Access Key
+const accessKey = ''; // введите свой Access Key
 
 const numberOfImages = 30; // задайте количество изображений на странице (максимум 30)
 const columnCount = 5; // задайте количество колонок
