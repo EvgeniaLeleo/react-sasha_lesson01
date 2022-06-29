@@ -4,7 +4,7 @@
 
 ## Установка
 
-Склонируйте репозиторий, перейдите в папку `test-task` и установите зависимости (dependencies, devDependencies).
+Склонируйте репозиторий, перейдите в папку `test-task` и установите зависимости (dependencies, devDependencies):
 
 ```sh
 cd react-sasha
