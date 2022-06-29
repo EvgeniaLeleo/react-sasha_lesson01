@@ -1,7 +1,7 @@
 {
-  "name": "memory-game",
+  "name": "test-task",
   "version": "1.0.0",
-  "description": "Deploy https://evgenialeleo.github.io/cards-game/",
+  "description": "",
   "main": "./src/ts/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,21 +15,14 @@
     "lint": "npm run lint:ts && npm run lint:scss",
     "prepare": "husky install"
   },
-  "keywords": [
-    "game",
-    "child",
-    "memory"
-  ],
+  "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EvgeniaLeleo/cards-game.git"
+    "url": ""
   },
   "author": "Evgenia Leleo",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EvgeniaLeleo/cards-game/issues"
-  },
-  "homepage": "https://github.com/EvgeniaLeleo/cards-game#readme",
+  "homepage": "",
   "devDependencies": {
     "copy-webpack-plugin": "^10.2.4",
     "cross-env": "^7.0.3",

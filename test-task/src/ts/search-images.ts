@@ -2,7 +2,6 @@ import showImages from './show-images';
 import { accessKey } from './user-settings';
 import { numberOfImages } from './user-settings';
 import httpRequest from './http-request';
-d;
 
 const searchImages = (event: SubmitEvent, searchInput: HTMLInputElement) => {
   event.preventDefault();
