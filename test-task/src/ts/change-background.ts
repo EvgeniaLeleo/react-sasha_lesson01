@@ -1,7 +1,9 @@
+import { dataStructure } from './types';
+
 const changeBackground = (
-  event: any,
+  event: MouseEvent,
   imgContainer: HTMLDivElement,
-  data: any
+  data: dataStructure
 ) => {
   let target = event.target as HTMLElement;
 

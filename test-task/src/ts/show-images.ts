@@ -1,7 +1,8 @@
 import changeBackground from './change-background';
 import { columnCount, widthOFColumn, gap } from './user-settings';
+import { dataStructure, resultStructure } from './types';
 
-const showImages = (data: any) => {
+const showImages = (data: dataStructure) => {
   const imgContainer = document.querySelector(
     '.img-container'
   ) as HTMLDivElement;
@@ -19,7 +20,7 @@ const showImages = (data: any) => {
     imgContainer.style.gap = gap;
   }
 
-  data.results.forEach((result: any, index: number) => {
+  data.results.forEach((result: resultStructure, index: number) => {
     const imgDiv = document.createElement('div');
     imgDiv.classList.add('img-div');
 

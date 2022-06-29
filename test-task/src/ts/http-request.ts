@@ -1,12 +1,6 @@
-const noop = () => {};
+import { requestData } from './types';
 
-type requestData = {
-  method: string;
-  url: string;
-  type?: XMLHttpRequestResponseType;
-  onSuccess: (data: any) => void;
-  onError?: (data: any) => void;
-};
+const noop = () => {};
 
 function httpRequest({
   method = 'GET',
