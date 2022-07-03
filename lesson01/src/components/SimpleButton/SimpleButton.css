@@ -10,7 +10,7 @@
 
   border: #6200ee;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
 
   cursor: pointer;
   transition: all 0.2s ease;
@@ -19,8 +19,6 @@
 .SimpleButton-Button:hover {
   background-color: #8438f0;
   border: #8438f0;
-
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .SimpleButton-Button:active {
