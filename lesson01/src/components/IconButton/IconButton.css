@@ -1,0 +1,36 @@
+.IconButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  line-height: 0;
+  color: #6200ee;
+
+  padding: 10px 10px;
+
+  background-color: #fff;
+
+  border: 1px solid #6200ee;
+  border-radius: 5px;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.IconButton:hover {
+  background-color: #e9dff8;
+}
+
+.IconButton:active {
+  background-color: #e1cefc;
+
+  transform: translate(0, 1px);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.IconButton-Icon {
+  width: 2rem;
+}

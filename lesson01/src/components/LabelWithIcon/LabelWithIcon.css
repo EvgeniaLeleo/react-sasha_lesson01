@@ -1,0 +1,12 @@
+.LabelWithIcon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.LabelWithIcon-Text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  line-height: 0;
+  color: #8359be;
+}

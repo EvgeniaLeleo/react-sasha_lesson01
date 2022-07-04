@@ -9,7 +9,7 @@ import sauropod from '../assets/sauropod.svg';
 import shrimp from '../assets/shrimp.svg';
 import sloth from '../assets/sloth.svg';
 
-export const getIcon = (icon: string): string | undefined => {
+export const getIcon = (icon: string | undefined): string | undefined => {
   switch (icon) {
     case 'beaver':
       return beaver;
