@@ -15,6 +15,10 @@ import {
   LabelWithIcon,
   LabelWithIconProps,
 } from './components/LabelWithIcon/LabelWithIcon';
+import {
+  QuestionAndAnswer,
+  QuestionAndAnswerProps,
+} from './components/QuestionAndAnswer/QuestionAndAnswer';
 
 function App() {
   const simpleButton: SimpleButtonProps = {
@@ -38,6 +42,10 @@ function App() {
     fontSize: '40px',
   };
 
+  const questionAndAnswer: QuestionAndAnswerProps = {
+    children: <SimpleButton {...simpleButton} />,
+  };
+
   return (
     <div className="App">
       <SimpleButton {...simpleButton} />
@@ -45,6 +53,7 @@ function App() {
       <Icon {...icon} />
       <IconButton {...iconButton} />
       <LabelWithIcon {...labelWithIcon} />
+      <QuestionAndAnswer {...questionAndAnswer} />
     </div>
   );
 }

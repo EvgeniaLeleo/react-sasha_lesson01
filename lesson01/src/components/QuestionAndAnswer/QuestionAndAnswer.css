@@ -1,0 +1,12 @@
+.QuestionAndAnswer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.QuestionAndAnswer-QuestionMark {
+  color: #5e14c6;
+  font-size: 2rem;
+
+  cursor: help;
+}
