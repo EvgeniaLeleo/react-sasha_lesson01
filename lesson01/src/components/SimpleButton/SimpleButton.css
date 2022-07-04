@@ -1,4 +1,4 @@
-.SimpleButton-Button {
+.SimpleButton {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
   line-height: 0;
@@ -10,21 +10,21 @@
 
   border: #6200ee;
   border-radius: 5px;
-  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.3);
 
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.SimpleButton-Button:hover {
+.SimpleButton:hover {
   background-color: #8438f0;
   border: #8438f0;
 }
 
-.SimpleButton-Button:active {
+.SimpleButton:active {
   background-color: #9062d2;
   border: #9062d2;
 
   transform: translate(0, 1px);
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
