@@ -1,18 +1,18 @@
 import React from 'react';
 import { FC } from 'react';
 import { cn } from '@bem-react/classname';
-import './DiverseButton.css';
+import './Button.css';
 
-const cnDiverseButton = cn('DiverseButton');
+const cnButton = cn('Button');
 
-export type DiverseButtonProps = {
+export type ButtonProps = {
   type: 'action' | 'outlined' | 'danger';
   buttonStatus: 'normal' | 'disabled' | 'loading';
   size: 's' | 'm' | 'l' | 'xl';
   buttonText?: string;
 };
 
-export const DiverseButton: FC<DiverseButtonProps> = ({
+export const Button: FC<ButtonProps> = ({
   type,
   buttonStatus,
   size,
@@ -29,17 +29,20 @@ export const DiverseButton: FC<DiverseButtonProps> = ({
       case 'xl':
         return '40px';
       default:
-        break;
+        return '16px';
     }
   };
 
   return (
     <button
-      className={cnDiverseButton({
+      className={cnButton({
         type: type,
         status: buttonStatus,
       })}
-      style={{ padding: buttonSize(size) }}
+      style={{
+        padding: buttonSize(size),
+        fontSize: `${parseInt(buttonSize(size)) * 0.7}px`,
+      }}
     >
       {buttonText ? buttonText.toUpperCase() : 'Unnamed button'.toUpperCase()}
     </button>

@@ -5,10 +5,7 @@ import {
   SimpleButton,
   SimpleButtonProps,
 } from './components/SimpleButton/SimpleButton';
-import {
-  DiverseButton,
-  DiverseButtonProps,
-} from './components/DiverseButton/DiverseButton';
+import { Button, ButtonProps } from './components/Button/Button';
 import { Icon, IconProps } from './components/Icon/Icon';
 import {
   IconButton,
@@ -28,42 +25,42 @@ function App() {
     buttonText: 'My first button',
   };
 
-  const actionButton: DiverseButtonProps = {
+  const actionButton: ButtonProps = {
     type: 'action',
     buttonStatus: 'normal',
     buttonText: '',
     size: 'm',
   };
 
-  const actionButtonLoading: DiverseButtonProps = {
+  const actionButtonLoading: ButtonProps = {
     type: 'action',
     buttonStatus: 'loading',
     buttonText: '',
     size: 'm',
   };
 
-  const dangerButton: DiverseButtonProps = {
+  const dangerButton: ButtonProps = {
     type: 'danger',
     buttonStatus: 'normal',
     buttonText: '',
     size: 'm',
   };
 
-  const dangerButtonLoading: DiverseButtonProps = {
+  const dangerButtonLoading: ButtonProps = {
     type: 'danger',
     buttonStatus: 'loading',
     buttonText: '',
     size: 'm',
   };
 
-  const outlinedButton: DiverseButtonProps = {
+  const outlinedButton: ButtonProps = {
     type: 'outlined',
     buttonStatus: 'normal',
     buttonText: '',
     size: 'm',
   };
 
-  const actionButtonDisabled: DiverseButtonProps = {
+  const actionButtonDisabled: ButtonProps = {
     type: 'action',
     buttonStatus: 'disabled',
     buttonText: '',
@@ -98,27 +95,27 @@ function App() {
       <SimpleButton {...simpleButton} />
       <p>Многоликий кнопкус</p>
       <div className="App-Buttons">
-        <DiverseButton
+        <Button
           {...actionButton}
           buttonText={`${actionButton.type} ${actionButton.buttonStatus}`}
         />
-        <DiverseButton
+        <Button
           {...actionButtonLoading}
           buttonText={`${actionButtonLoading.type} ${actionButtonLoading.buttonStatus}`}
         />
-        <DiverseButton
+        <Button
           {...dangerButton}
           buttonText={`${dangerButton.type} ${dangerButton.buttonStatus}`}
         />
-        <DiverseButton
+        <Button
           {...dangerButtonLoading}
           buttonText={`${dangerButtonLoading.type} ${dangerButtonLoading.buttonStatus}`}
         />
-        <DiverseButton
+        <Button
           {...outlinedButton}
           buttonText={`${outlinedButton.type} ${outlinedButton.buttonStatus}`}
         />
-        <DiverseButton
+        <Button
           {...actionButtonDisabled}
           buttonText={`${actionButtonDisabled.type} ${actionButtonDisabled.buttonStatus}`}
         />

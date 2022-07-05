@@ -1,6 +1,6 @@
 /* COMMON STYLES */
 
-.DiverseButton {
+.Button {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
   line-height: 0;
@@ -16,25 +16,25 @@
   transition: all 0.2s ease;
 }
 
-.DiverseButton:active {
+.Button:active {
   transform: translate(0, 1px);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 /*  ACTION */
 
-.DiverseButton_type_action {
+.Button_type_action {
   color: #fff;
   background-color: #6200ee;
   border: 1px solid #6200ee;
 }
 
-.DiverseButton_type_action:hover {
+.Button_type_action:hover {
   background-color: #8438f0;
   border: 1px solid #8438f0;
 }
 
-.DiverseButton_type_action:active {
+.Button_type_action:active {
   background-color: #9062d2;
   border: 1px solid #9062d2;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
@@ -42,42 +42,42 @@
 
 /* OUTLINED */
 
-.DiverseButton_type_outlined {
+.Button_type_outlined {
   color: #6200ee;
   background-color: #fff;
   border: 1px solid #6200ee;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.15);
 }
 
-.DiverseButton_type_outlined:hover {
+.Button_type_outlined:hover {
   background-color: #e9dff8;
 }
 
-.DiverseButton_type_outlined:active {
+.Button_type_outlined:active {
   background-color: #e1cefc;
 }
 
 /* DANGER */
 
-.DiverseButton_type_danger {
+.Button_type_danger {
   color: #ff5882;
   background-color: #fff;
   border: 1px solid #ff5882;
 }
 
-.DiverseButton_type_danger:hover {
+.Button_type_danger:hover {
   background-color: #ffd3de;
 }
 
-.DiverseButton_type_danger:active {
+.Button_type_danger:active {
   background-color: #ffb9ca;
 }
 
 /* DISABLED */
 
-.DiverseButton_status_disabled,
-.DiverseButton_status_disabled:hover,
-.DiverseButton_status_disabled:active {
+.Button_status_disabled,
+.Button_status_disabled:hover,
+.Button_status_disabled:active {
   color: #909090;
   background-color: #ededed;
   border: 1px solid #aeaeae;
@@ -89,9 +89,9 @@
 
 /* LOADING */
 
-.DiverseButton_status_loading,
-.DiverseButton_status_loading:hover,
-.DiverseButton_status_loading:active {
+.Button_status_loading,
+.Button_status_loading:hover,
+.Button_status_loading:active {
   color: #8c5bd2;
 
   background: linear-gradient(
@@ -115,9 +115,9 @@
   cursor: not-allowed;
 }
 
-.DiverseButton_type_danger.DiverseButton_status_loading,
-.DiverseButton_type_danger.DiverseButton_status_loading:hover,
-.DiverseButton_type_danger.DiverseButton_status_loading:active {
+.Button_type_danger.Button_status_loading,
+.Button_type_danger.Button_status_loading:hover,
+.Button_type_danger.Button_status_loading:active {
   color: #ffacc0;
   background: linear-gradient(
     -45deg,
