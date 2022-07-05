@@ -8,7 +8,7 @@
 
   background-color: #6200ee;
 
-  border: #6200ee;
+  border: 1px solid #6200ee;
   border-radius: 5px;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.3);
 
@@ -18,12 +18,12 @@
 
 .SimpleButton:hover {
   background-color: #8438f0;
-  border: #8438f0;
+  border: 1px solid #8438f0;
 }
 
 .SimpleButton:active {
   background-color: #9062d2;
-  border: #9062d2;
+  border: 1px solid #9062d2;
 
   transform: translate(0, 1px);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);

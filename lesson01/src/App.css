@@ -1,7 +1,24 @@
 .App {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-items: start;
+  align-items: center;
   gap: 50px;
+
+  font-weight: 400;
+  font-size: 16px;
+  color: #5e14c6;
+  text-transform: uppercase;
+
   padding: 50px;
+}
+
+.App-Buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.App-Buttons > * {
+  align-self: flex-start;
 }
