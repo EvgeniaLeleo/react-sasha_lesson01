@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { FC } from 'react';
 import { cn } from '@bem-react/classname';
 
@@ -7,10 +7,14 @@ import './QuestionAndAnswer.css';
 const cnQuestionAndAnswer = cn('QuestionAndAnswer');
 
 export type QuestionAndAnswerProps = {
-  children?: JSX.Element;
+  children?: ReactNode;
+  tooltip: string;
 };
 
-export const QuestionAndAnswer: FC<QuestionAndAnswerProps> = ({ children }) => {
+export const QuestionAndAnswer: FC<QuestionAndAnswerProps> = ({
+  children,
+  tooltip,
+}) => {
   if (!children) {
     return (
       <span className={cnQuestionAndAnswer('QuestionMark')}>
@@ -22,10 +26,7 @@ export const QuestionAndAnswer: FC<QuestionAndAnswerProps> = ({ children }) => {
   return (
     <div className={cnQuestionAndAnswer()}>
       {children}
-      <span
-        className={cnQuestionAndAnswer('QuestionMark')}
-        title="Истина где-то рядом"
-      >
+      <span className={cnQuestionAndAnswer('QuestionMark')} title={tooltip}>
         ?
       </span>
     </div>

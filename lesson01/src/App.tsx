@@ -44,6 +44,7 @@ function App() {
 
   const questionAndAnswer: QuestionAndAnswerProps = {
     children: <SimpleButton {...simpleButton} />,
+    tooltip: 'Истина где-то рядом',
   };
 
   return (
