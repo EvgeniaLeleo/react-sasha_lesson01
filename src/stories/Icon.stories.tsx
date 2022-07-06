@@ -7,6 +7,15 @@ import { Icon } from './Icon';
 export default {
   title: 'Icon',
   component: Icon,
+  parameters: {
+    backgrounds: {
+      default: 'light_purple',
+      values: [
+        { name: 'light_purple', value: '#faf6ff' },
+        { name: 'white', value: '#fff' },
+      ],
+    },
+  },
 } as ComponentMeta<typeof Icon>;
 
 const Template: ComponentStory<typeof Icon> = (args) => <Icon {...args} />;

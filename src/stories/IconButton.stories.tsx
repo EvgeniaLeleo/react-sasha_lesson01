@@ -7,6 +7,15 @@ import { IconButton } from './IconButton';
 export default {
   title: 'IconButton',
   component: IconButton,
+  parameters: {
+    backgrounds: {
+      default: 'light_purple',
+      values: [
+        { name: 'light_purple', value: '#faf6ff' },
+        { name: 'white', value: '#fff' },
+      ],
+    },
+  },
 } as ComponentMeta<typeof IconButton>;
 
 const Template: ComponentStory<typeof IconButton> = (args) => (

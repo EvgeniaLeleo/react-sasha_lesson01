@@ -7,6 +7,15 @@ import { LabelWithIcon } from './LabelWithIcon';
 export default {
   title: 'LabelWithIcon',
   component: LabelWithIcon,
+  parameters: {
+    backgrounds: {
+      default: 'light_purple',
+      values: [
+        { name: 'light_purple', value: '#faf6ff' },
+        { name: 'white', value: '#fff' },
+      ],
+    },
+  },
 } as ComponentMeta<typeof LabelWithIcon>;
 
 const Template: ComponentStory<typeof LabelWithIcon> = (args) => (
