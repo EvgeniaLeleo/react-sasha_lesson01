@@ -74,6 +74,7 @@ function App() {
 
   const iconButton: IconButtonProps = {
     icon: 'bug',
+    iconSize: '30px',
     buttonText: 'Icon button',
   };
 

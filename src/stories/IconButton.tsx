@@ -3,8 +3,8 @@ import { FC } from 'react';
 import { cn } from '@bem-react/classname';
 
 import './IconButton.css';
-import { IconName } from '../types/IconName';
-import { Icon, IconProps } from '../Icon/Icon';
+import { IconName } from './types/IconName';
+import { Icon, IconProps } from './Icon';
 
 const cnIconButton = cn('IconButton');
 
