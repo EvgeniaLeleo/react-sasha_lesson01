@@ -15,7 +15,7 @@ export const BeaverIcon = Template.bind({});
 
 BeaverIcon.args = {
   iconName: 'beaver',
-  size: '150px',
+  size: '170px',
 };
 
 export const BugIcon = Template.bind({});
@@ -43,7 +43,7 @@ export const KangarooIcon = Template.bind({});
 
 KangarooIcon.args = {
   iconName: 'kangaroo',
-  size: '150px',
+  size: '200px',
 };
 
 export const OctopusIcon = Template.bind({});
@@ -57,26 +57,26 @@ export const OtterIcon = Template.bind({});
 
 OtterIcon.args = {
   iconName: 'otter',
-  size: '150px',
+  size: '200px',
 };
 
 export const SauropodIcon = Template.bind({});
 
 SauropodIcon.args = {
   iconName: 'sauropod',
-  size: '150px',
+  size: '250px',
 };
 
 export const ShrimpIcon = Template.bind({});
 
 ShrimpIcon.args = {
   iconName: 'shrimp',
-  size: '150px',
+  size: '130px',
 };
 
 export const SlothIcon = Template.bind({});
 
 SlothIcon.args = {
   iconName: 'sloth',
-  size: '150px',
+  size: '200px',
 };
