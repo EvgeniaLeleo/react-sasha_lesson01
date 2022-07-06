@@ -1,0 +1,164 @@
+/* COMMON STYLES */
+
+.Button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  line-height: 0;
+  text-align: center;
+
+  padding: 20px 20px;
+
+  border-radius: 5px;
+  outline: transparent;
+
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.Button:active {
+  transform: translate(0, 1px);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*  ACTION */
+
+.Button_type_action {
+  color: #fff;
+  background-color: #6200ee;
+  border: 1px solid #6200ee;
+}
+
+.Button_type_action:hover {
+  background-color: #8438f0;
+  border: 1px solid #8438f0;
+}
+
+.Button_type_action:active {
+  background-color: #9062d2;
+  border: 1px solid #9062d2;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* OUTLINED */
+
+.Button_type_outlined {
+  color: #6200ee;
+  background-color: #fff;
+  border: 1px solid #6200ee;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.Button_type_outlined:hover {
+  background-color: #e9dff8;
+}
+
+.Button_type_outlined:active {
+  background-color: #e1cefc;
+}
+
+/* DANGER */
+
+.Button_type_danger {
+  color: #ff5882;
+  background-color: #fff;
+  border: 1px solid #ff5882;
+}
+
+.Button_type_danger:hover {
+  background-color: #ffd3de;
+}
+
+.Button_type_danger:active {
+  background-color: #ffb9ca;
+}
+
+/* DISABLED */
+
+.Button_status_disabled,
+.Button_status_disabled:hover,
+.Button_status_disabled:active {
+  color: #909090;
+  background-color: #ededed;
+  border: 1px solid #aeaeae;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+
+  transform: none;
+  cursor: not-allowed;
+}
+
+/* LOADING */
+
+.Button_status_loading,
+.Button_status_loading:hover,
+.Button_status_loading:active {
+  color: #8c5bd2;
+
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 1) 25%,
+    #e9dff8 25%,
+    #e9dff8 50%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 75%,
+    #e9dff8 75%,
+    #e9dff8
+  );
+  background-repeat: repeat;
+  background-size: 40px 40px, 100% 100%;
+
+  border: 1px solid #dfcdfa;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+
+  animation: progress-bar-stripes 3s linear infinite;
+  transform: none;
+  cursor: not-allowed;
+}
+
+.Button_type_danger.Button_status_loading,
+.Button_type_danger.Button_status_loading:hover,
+.Button_type_danger.Button_status_loading:active {
+  color: #ffacc0;
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 1) 25%,
+    #ffeaef 25%,
+    #ffeaef 50%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 75%,
+    #ffeaef 75%,
+    #ffeaeb
+  );
+  background-size: 40px 40px, 100% 100%;
+
+  border: 1px solid #ffe2e4;
+}
+
+/* ANIMATION */
+
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
+
+@-moz-keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
